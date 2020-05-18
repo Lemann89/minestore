@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://kit.fontawesome.com/ced04e20c5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+	<link rel="stylesheet" href="libs/loading-bar/loading-bar.min.css">
+	<link rel="stylesheet" href="libs/hover/hover-min.css">
+	<script src="libs/loading-bar/loading-bar.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="nav">
+				<div class="nav__home">
+					<i class="fas fa-undo nav__bar-icon nav__bar-icon--undo"></i>
+					<p class="nav__home-text">
+						Back to homepage
+					</p>
+				</div>
+				<div class="nav__bar">
+					<div class="nav__bar-currency">
+						<p class="nav__bar-currency-text">Currency</p>
+						<div class="nav__bar-currency-change js-navCurrencyButton">
+							<p class="nav__bar-title ">EU</p>
+							<i class="fas fa-chevron-down nav__bar-icon nav__bar-icon--currency"></i>
+						</div>
+					</div>
+					<ul class="nav__bar-currency-dropdown-list js-navCurrencyList hidden">
+						<a href="#" class="nav__bar-currency-dropdown-link">
+							<li class="nav__bar-currency-dropdown-item">
+								USD
+							</li>
+						</a>
+						<a href="#" class="nav__bar-currency-dropdown-link">
+							<li class="nav__bar-currency-dropdown-item">
+								GPB
+							</li>
+						</a>
+					</ul>
+					<div class="nav__bar-cart">
+						<i class="fas fa-shopping-cart nav__bar-icon"></i>
+						<div class="nav__bar-cart-title">
+							<p class="nav__bar-title">Shopping cart</p>
+							<p class="nav__bar-subtitle">1 item for 1.00EU</p>
+						</div>
+					</div>
+					<div class="nav__bar-logout">
+						<i class="fas fa-sign-out-alt nav__bar-icon"></i>
+						<p class="nav__bar-title">logout</p>
+					</div>
+				</div>
+			</div>
+			<div class="header__contact">
+				<div class="header__contact-ip">
+					<img src="img/creeper-ip.png" alt="creeper-ip" class="header__contact-img">
+					<div class="header__contact-text">
+						<div class="header__contact-title">
+							play.arcenia.com
+						</div>
+						<div class="header__contact-subtitle">
+							364 Members Online
+						</div>
+					</div>
+				</div>
+				<div class="header__contact-discord">
+					<div class="header__contact-text">
+						<div class="header__contact-title">
+							Discord Server
+						</div>
+						<div class="header__contact-subtitle">
+							433 Members Online
+						</div>
+					</div>
+					<img src="img/discord.png" alt="discord" class="header__contact-img">						
+				</div>
+			</div>
+			<div class="header-logo">
+				<img src="img/logo.png" alt="logo" class="header-logo-img">
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="main-flex">
+				<aside class="sidebar">
+					<div class="sidebar__navigation">
+						<div class="sidebar__navigation-logo">
+							<img src="img/logo.png" alt="logo" class="sidebar__navigation-logo-img">
+						</div>
+						<div class="sidebar__navigation-store">
+							<div class="sidebar__navigation-store-text">
+								<p class="sidebar__navigation-store-title">
+									official store
+								</p>
+							</div>
+						</div>
+						<div class="sidebar__navigation-block">
+							<ul class="sidebar__navigation-list">
+								<a href="#" class="sidebar__navigation-link">
+									<li class="sidebar__navigation-item hvr-shadow-radial hvr-grow">
+										<img src="img/commands.png" alt="commands" class="sidebar__navigation-item-img">
+										<p class="sidebar__navigation-item-text">Commands</p>
+									</li>
+								</a>
+								<a href="#" class="sidebar__navigation-link">
+									<li class="sidebar__navigation-item hvr-shadow-radial hvr-grow">
+										<img src="img/spawner.png" alt="spawner" class="sidebar__navigation-item-img">
+										<p class="sidebar__navigation-item-text">Spawners</p>
+									</li>
+								</a>
+								<a href="#" class="sidebar__navigation-link">
+									<li class="sidebar__navigation-item hvr-shadow-radial hvr-grow">
+										<img src="img/pig.png" alt="pig" class="sidebar__navigation-item-img sidebar__navigation-item-img--pig">
+										<p class="sidebar__navigation-item-text">Hover</p>
+									</li>
+								</a>
+								<a href="#" class="sidebar__navigation-link">
+									<li class="sidebar__navigation-item hvr-shadow-radial hvr-grow js-sidebarDropdownButton">
+										<img src="img/armor.png" alt="armor" class="sidebar__navigation-item-img">
+										<p class="sidebar__navigation-item-text">Armor</p>
+										<i class="fas fa-chevron-down sidebar__navigation-dropdown-icon "></i>
+									</li>	
+								</a>
+								<ul class="sidebar__navigation-dropdown-list js-sidebarDropdownList hidden">
+									<a href="#" class="sidebar__navigation-dropdown-link">
+										<li class="sidebar__navigation-dropdown-item">faction</li>
+									</a>
+									<a href="#" class="sidebar__navigation-dropdown-link">
+										<li class="sidebar__navigation-dropdown-item">survival</li>
+									</a>
+									<a href="#" class="sidebar__navigation-dropdown-link">
+										<li class="sidebar__navigation-dropdown-item">skyblock</li>
+									</a>
+								</ul>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar__donator">
+						<div class="sidebar__donator-topdonor">
+							<div class="sidebar__donator-topdonor-block-flex">
+								<div class="sidebar__donator-topdonor-block">
+									<div class="sidebar__donator-topdonor-block-text">
+										<i class="fas fa-donate sidebar__donator-topdonor-icon"></i>
+										<p class="sidebar__donator-topdonor-text">
+											Top Donator
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar__donator-topdonor-player">
+								<div class="sidebar__donator-topdonor-player-image">
+									<img src="img/donator.png" alt="donator" class="sidebar__donator-topdonor-player-img">
+								</div>
+								<div class="sidebar__donator-topdonor-player-text">
+									<p class="sidebar__donator-topdonor-player-title">
+										Jordy
+									</p>
+									<p class="sidebar__donator-topdonor-player-subtitle">
+										Donated the most <br> this month.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar__donator-lastdonor">
+							<div class="sidebar__donator-topdonor-block-flex">
+								<div class="sidebar__donator-topdonor-block sidebar__donator-topdonor-block--last">
+									<div class="sidebar__donator-topdonor-block-text--last">
+										<p class="sidebar__donator-topdonor-text">
+											Last Donator
+										</p>
+										<i class="fas fa-donate  sidebar__donator-topdonor-icon"></i>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar__donator-lastdonor-players-block">
+								<div class="sidebar__donator-lastdonor-players">
+									<div class="sidebar__donator-lastdonor-player">
+										<img src="img/player-head1.png" alt="player-head1" class="content__payments-player-img">
+										<p class="sidebar__donator-lastdonor-player-nickname">Player</p>
+									</div>
+									<div class="sidebar__lastdonor-player">
+										<img src="img/player-head2.png" alt="player-head1" class="content__payments-player-img">
+										<p class="sidebar__donator-lastdonor-player-nickname">Player</p>
+									</div>
+									<div class="sidebar__lastdonor-player">
+										<img src="img/player-head3.png" alt="player-head1" class="content__payments-player-img">
+										<p class="sidebar__donator-lastdonor-player-nickname">Player</p>
+									</div>
+								</div>
+	
+								<div class="sidebar__donator-lastdonor-line"></div>
+	
+								<div class="sidebar__donator-lastdonor-players">
+									<div class="sidebar__donator-lastdonor-player">
+										<img src="img/player-head3.png" alt="player-head1" class="content__payments-player-img">
+										<p class="sidebar__donator-lastdonor-player-nickname">Player</p>
+									</div>
+									<div class="sidebar__lastdonor-player">
+										<img src="img/player-head2.png" alt="player-head1" class="content__payments-player-img">
+										<p class="sidebar__donator-lastdonor-player-nickname">Player</p>
+									</div>
+									<div class="sidebar__lastdonor-player">
+										<img src="img/player-head1.png" alt="player-head1" class="content__payments-player-img">
+										<p class="sidebar__donator-lastdonor-player-nickname">Player</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar__donator-donate">
+							<button class="sidebar__donator-donate-btn">Donate!</button>
+						</div>
+					</div>
+				</aside>
+				<div class="mobile">
+					<div class="mobile__menu">
+						<p class="mobile__menu-title">
+							Store menu
+						</p>
+						<div class="mobile__burger js-burgerMenu">
+							<span class="burger js-burger"></span>
+						</div>
+					</div>
+					<ul class="mobile-list js-menuList hidden">
+						<a href="#" class="mobile-link">
+							<li class="mobile-item">
+								<img src="img/commands.png" alt="commands" class="mobile-item-img">
+								<p class="mobile-item-text">Commands</p>
+							</li>
+						</a>
+						<a href="#" class="mobile-link">
+							<li class="mobile-item">
+								<img src="img/spawner.png" alt="spawner" class="mobile-item-img">
+								<p class="mobile-item-text">Spawners</p>
+							</li>
+						</a>
+						<a href="#" class="mobile-link">
+							<li class="mobile-item">
+								<img src="img/pig.png" alt="pig" class="mobile-item-img mobile-item-img--pig">
+								<p class="mobile-item-text mobile-item-text--pig">Hover</p>
+							</li>	
+						</a>
+						<a href="#" class="mobile-link">
+							<li class="mobile-item">
+								<img src="img/armor.png" alt="armor" class="mobile-item-img">
+								<p class="mobile-item-text">Armor</p>
+							</li>
+						</a>
+					</ul>
+				</div>
+				<div class="content">
+					<div class="content__donation">
+						<div class="content-container content-flex">
+							<div class="content__donation-goal">
+								<div class="content__donation-text">
+									<p class="content__donation-goal-title">
+										Donation Goal
+										<i class="fas fa-chart-line content__donation-icon"></i>
+									</p>
+									<p class="content__donation-goal-subtitle">
+										150/500 USD
+									</p>
+								</div>
+								<!-- <div class="myBar " data-value="60" data-stroke-trail="white"> -->
+								<!-- </div> -->
+							</div>
+						
+							<div class="content__donation-player">
+								<p class="content__donation-player-text">
+									Majoras
+								</p>
+								<div class="content__donation-player-image">
+									<img src="img/TwentyOne.png" alt="player" class="content__donation-player-img">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-container">
+						<div class="content__warning">
+							<div class="content__warning-exclamation">
+								<i class="fas fa-exclamation content__warning-exclamation-icon"></i>
+							</div>
+							<div class="content__warning-text">
+								<p class="content__warning-title">
+									Warning
+								</p>
+								<p class="content__warning-subtitle">
+									Reference site about Lorem Ipsum, giving information on its  
+									origins, as well as a random Lipsum generator.
+								</p>
+							</div>
+							<button class="content__warning-btn">okay!</button>
+						</div>
+						<div class="content-first-block">
+							<div class="content__welcome">
+								<div>
+									<p class="content__welcome-title">
+										welcome
+									</p>
+								</div>
+								<div class="content__welcome-subtitle-block">
+									<p class="content__welcome-subtitle">
+										to the official Arcenia Network Server Store.
+									</p>
+								</div>
+								<div class="content__welcome-text-block">
+									<p class="content__welcome-text">
+										To begin shopping, please select a category from the sidebar. Please 
+										note that ranks cost a one-time fee and are unlocked permanently!
+									</p>
+								</div>
+							</div>
+							<div class="content__sale">
+								<img src="img/sale.png" alt="sale" class="content__sale-img">
+							</div>
+						</div>
+						<div class="content-second-block ">
+							<div class="content__information">
+								<h2 class="content__information-support-title">
+									SUPPORT / QUESTIONS
+								</h2>
+								<p class="content__information-support-subtitle">
+									Need any questions answered before checkout? Waited 
+									more than 20 minutes but your package still has not 
+									arrived? Ask the community/staff on Discord, or for 
+									payment support, submit a support ticket on our website.
+								</p>
+								
+								<h2 class="content__information-refund-title">
+									REFUND POLICY 
+								</h2>
+								<p class="content__information-refund-subtitle">
+									All payments are final and non-refundable. Attempting 
+									a chargeback or opening a PayPal dispute will result in 
+									permanent and irreversible banishment from all of our servers, 
+									and other minecraft stores.
+								</p>
+								<p class="content__information-refund-text">
+									It could take between 1-20 minutes for your 
+									purchase to be credited in-game. If you are 
+									still not credited after this time period, 
+									please open a support ticket on our forums 
+									with proof of purchase and we will look into 
+									your issue.
+								</p>
+							</div>
+							<div class="content__payments">
+								<h2 class="content__payments-title">
+									RECENT PAYMENTS
+								</h2>
+								<div class="content__payments-title-line"></div>
+								<div class="content__payments-players">
+									<div class="content__payments-player">
+										<img src="img/player-head1.png" alt="player-head1" class="content__payments-player-img">
+										<p class="content__payments-player-nickname">Player</p>
+									</div>
+									<div class="content__payments-player">
+										<img src="img/player-head2.png" alt="player-head1" class="content__payments-player-img">
+										<p class="content__payments-player-nickname">Player</p>
+									</div>
+									<div class="content__payments-player">
+										<img src="img/player-head3.png" alt="player-head1" class="content__payments-player-img">
+										<p class="content__payments-player-nickname">Player</p>
+									</div>
+									<div class="content__payments-player">
+										<img src="img/player-head4.png" alt="player-head1" class="content__payments-player-img">
+										<p class="content__payments-player-nickname">Player</p>
+									</div>
+								</div>
+
+								<div class="content__payments-line"></div>
+
+								<div class="content__payments-players">
+									<div class="content__payments-player">
+										<img src="img/player-head1.png" alt="player-head1" class="content__payments-player-img">
+										<p class="content__payments-player-nickname">Player</p>
+									</div>
+									<div class="content__payments-player">
+										<img src="img/player-head2.png" alt="player-head1" class="content__payments-player-img">
+										<p class="content__payments-player-nickname">Player</p>
+									</div>
+									<div class="content__payments-player">
+										<img src="img/player-head3.png" alt="player-head1" class="content__payments-player-img">
+										<p class="content__payments-player-nickname">Player</p>
+									</div>
+									<div class="content__payments-player">
+										<img src="img/player-head4.png" alt="player-head1" class="content__payments-player-img">
+										<p class="content__payments-player-nickname">Player</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content__systems">
+							<div class="content__systems-payment">
+								<img src="img/paypal.png" alt="paypal" class="content__systems-paypal">
+								<p class="content__systems-text">
+									PayPal balance, Banks, All Credit/Debit Cards
+								</p>
+							</div>
+							<div class="content__systems-line"></div>
+							<div class="content__systems-payment">
+								<img src="img/xcolla.png" alt="paypal" class="content__systems-xsolla">
+								<p class="content__systems-text">
+									Paysafecard, Amazon Pay, Mobile Payments, +600 More
+								</p>
+							</div>
+							<div class="content__systems-line"></div>
+							<div class="content__systems-payment">
+								<img src="img/stripe.png" alt="paypal" class="content__systems-stripe">
+								<p class="content__systems-text content__systems-text--stripe">
+									All Credit & Debit Cards
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer-flex">
+			<div class="footer__about">
+				<div class="footer__about-text">
+					<p class="footer__about-title">
+						About Us
+					</p>
+					<div class="footer-line"></div>
+					<p class="footer__about-subtitle">
+						Arcenia is a Minecraft: Java Edition 
+						network that provides players with captivating 
+						and unique gameplay. This is the only official 
+						store for the network.
+					</p>
+				</div>
+			</div>
+			<div class="footer__inc">
+				<img src="img/footer-logo.png" alt="footer-logo" class="footer__inc-img">
+				<p class="footer__inc-years">
+					2017 - 2020 ©
+				</p>
+				<div class="footer__inc-text">
+					<div class="footer__inc-title-gradient">
+						<h2 class="footer__inc-title">			
+							Arcenia Inc.
+						</h2>
+					</div>
+					<p class="footer__inc-rights">
+						All Rights Reserved.
+					</p>
+					<p class="footer__inc-subtitle">
+						We are not affiliated with Mojang AB.
+					</p>
+				</div>
+				<div class="footer__inc-icons">
+					<i class="fab fa-facebook footer__inc-icon"></i>
+					<i class="fab fa-instagram footer__inc-icon"></i>
+					<i class="fab fa-discord footer__inc-icon"></i>
+					<i class="fab fa-twitter footer__inc-icon"></i>
+				</div>
+			</div>
+			<div class="footer__links">
+				<div class="footer__links-text">
+					<p class="footer__links-title">
+						Useful Links
+					</p>
+					<div class="footer-line"></div>
+					<ul class="footer__links-list">
+						<li class="footer__links-item">VOTE</li>
+						<li class="footer__links-item">FORUM</li>
+						<li class="footer__links-item">RULES</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/common.js"></script>
+	<script>
+		var bar = new ldBar(".myBar", {
+			"stroke": '#fff',
+			"width":100,
+			"stroke-width": 8,
+			"data-stroke-trail":'#282828',
+			"stroke-trail-width":5,
+			"preset": "line",
+			"value": 65,
+			"stroke-linecap": "round"
+		});
+	</script>
+</body>
+</html>
